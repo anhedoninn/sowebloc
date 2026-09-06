@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOWEBLOC</title>
+<meta name="description" content="SOWE Studio Set — уже в продаже.">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ticker -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>НОВИНКА — <em>STUDIO SET</em></span>
+    <span>ОГРАНИЧЕННЫЙ ТИРАЖ</span>
+    <span>НОВИНКА — <em>STUDIO SET</em></span>
+    <span>ОГРАНИЧЕННЫЙ ТИРАЖ</span>
+    <span>НОВИНКА — <em>STUDIO SET</em></span>
+    <span>ОГРАНИЧЕННЫЙ ТИРАЖ</span>
+    <span>НОВИНКА — <em>STUDIO SET</em></span>
+    <span>ОГРАНИЧЕННЫЙ ТИРАЖ</span>
+  </div>
+</div>
+
+<!-- nav -->
+<header class="nav" id="siteNav">
+  <nav class="nav__links">
+    <a href="#studio-set">Каталог</a>
+    <a href="#info">Инфо</a>
+  </nav>
+  <a href="#top" class="nav__logo" aria-label="SOWE — главная">
+    <img src="assets/img/logo-white-alpha.png" alt="SOWE">
+  </a>
+  <div class="nav__links nav__links--right">
+    <a href="#studio-set" class="nav__icon-btn" aria-label="Поиск по каталогу">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.6" y2="16.6"/></svg>
+      <span class="nav__icon-label">Поиск</span>
+    </a>
+    <button class="nav__icon-btn" id="bagToggle" aria-label="Открыть корзину">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 8h12l-1 13H7L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+      <span>Корзина</span>
+      <span class="nav__bag-count" id="bagCount">0</span>
+    </button>
+  </div>
+  <button class="nav__menu-btn" id="menuToggle" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <a href="#studio-set">Каталог</a>
+  <a href="#info">Инфо</a>
+</div>
+
+<main id="top">
+
+  <!-- hero: the two supplied visuals, split, as in the reference -->
+  <section class="hero">
+    <div class="hero__panel">
+      <video autoplay muted loop playsinline poster="assets/img/visual-1-poster.jpg">
+        <source src="assets/video/visual-1.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero__panel">
+      <video autoplay muted loop playsinline poster="assets/img/visual-2-poster.jpg">
+        <source src="assets/video/visual-2.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero__divider"></div>
+    <div class="hero__copy">
+      <h1>SOWE</h1>
+    </div>
+    <div class="hero__scroll">
+      <span>ЛИСТАЙТЕ</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 4v16M6 14l6 6 6-6"/></svg>
+    </div>
+  </section>
+
+  <!-- shop grid: two colorway cards -->
+  <section class="shop" id="studio-set">
+    <div class="wrap">
+      <div class="shop__head">
+        <h2>Studio Set</h2>
+      
+      </div>
+
+      <div class="shop__grid">
+
+        <article class="shop-card" data-color-name="Серый">
+          <div class="shop-card__media">
+            <span class="shop-card__badge">NEW</span>
+            <img class="shop-card__img shop-card__img--a" src="assets/img/grey2.jpg" alt="Studio Set, серый — модель в худи на молнии">
+            <img class="shop-card__img shop-card__img--b" src="assets/img/grey1.jpg" alt="Studio Set, серый — вид в полный рост">
+          </div>
+          <div class="shop-card__body">
+            <div class="shop-card__head">
+              <div>
+                <h3>Studio Set — GREY</h3>
+                <p class="shop-card__sub"></p>
+              </div>
+              <span class="shop-card__price">10.500 сом</span>
+            </div>
+            <div class="shop-card__sizes">
+              <button class="size-pill">XS</button>
+              <button class="size-pill">S</button>
+              <button class="size-pill">M</button>
+              <button class="size-pill">L</button>
+              <button class="size-pill">XL</button>
+            </div>
+            <button class="shop-card__add" data-state="idle">
+              <span class="shop-card__add-label">Выберите размер</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="shop-card" data-color-name="Чёрный">
+          <div class="shop-card__media">
+            <span class="shop-card__badge">NEW</span>
+            <img class="shop-card__img shop-card__img--a" src="assets/img/black.jpg" alt="Studio Set, чёрный — модель в худи на молнии">
+            <img class="shop-card__img shop-card__img--b" src="assets/img/black2.jpg" alt="Studio Set, чёрный — вид в полный рост">
+          </div>
+          <div class="shop-card__body">
+            <div class="shop-card__head">
+              <div>
+                <h3>Studio Set — BLACK</h3>
+                <p class="shop-card__sub"></p>
+              </div>
+              <span class="shop-card__price">10.500 сом</span>
+            </div>
+            <div class="shop-card__sizes">
+              <button class="size-pill">XS</button>
+              <button class="size-pill">S</button>
+              <button class="size-pill">M</button>
+              <button class="size-pill">L</button>
+              <button class="size-pill">XL</button>
+            </div>
+            <button class="shop-card__add" data-state="idle">
+              <span class="shop-card__add-label">Выберите размер</span>
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- footer -->
+<footer class="footer" id="info">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__mark">
+        <img src="assets/img/logo-white-alpha.png" alt="SOWE">
+        <form class="newsletter" id="newsletterForm">
+          <input type="email" placeholder="Ваш email" required aria-label="Email адрес">
+          <button type="submit">Подписаться</button>
+        </form>
+        <p class="newsletter__note" id="newsletterNote"></p>
+      </div>
+      <div class="footer__col">
+        <h3><a href="company.html">Компания</a></h3>
+        <ul>
+          <li><a href="#studio-set">Studio Set</a></li>
+          <li><a href="stores.html">SOWEBLOC</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3>Инфо</h3>
+        <ul>
+          <li><a href="https://t.me/SOWEBLOCOFF" target="_blank" rel="noopener noreferrer">Заказать</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3>Соцсети</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/sowebloc/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://t.me/sowebloc" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+      
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> SOWE. Все права защищены.</span>
+      <span>Сайт: студия SOWE.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- cart drawer -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer__head">
+    <h3>Ваша корзина</h3>
+    <button class="drawer__close" id="drawerClose" aria-label="Закрыть корзину"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+  </div>
+  <div class="drawer__body" id="drawerBody">
+    <p class="drawer__empty">Ваша корзина пуста.</p>
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>

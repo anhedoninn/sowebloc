@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOWEBLOC — Магазин в Бишкеке</title>
+<meta name="description" content="SOWEBLOC — шоурум в Бишкеке. Г. Бишкек, Юнусалиева ул, 117.">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ticker -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>НОВИНКА — <em>STUDIO SET</em></span>
+    <span>ОГРАНИЧЕННЫЙ ТИРАЖ</span>
+    <span>НОВИНКА — <em>STUDIO SET</em></span>
+    <span>ОГРАНИЧЕННЫЙ ТИРАЖ</span>
+    <span>НОВИНКА — <em>STUDIO SET</em></span>
+    <span>ОГРАНИЧЕННЫЙ ТИРАЖ</span>
+    <span>НОВИНКА — <em>STUDIO SET</em></span>
+    <span>ОГРАНИЧЕННЫЙ ТИРАЖ</span>
+  </div>
+</div>
+
+<!-- nav -->
+<header class="nav" id="siteNav">
+  <nav class="nav__links">
+    <a href="index.html#studio-set">Каталог</a>
+    <a href="index.html#info">Инфо</a>
+  </nav>
+  <a href="index.html#top" class="nav__logo" aria-label="SOWE — главная">
+    <img src="assets/img/logo-white-alpha.png" alt="SOWE">
+  </a>
+  <div class="nav__links nav__links--right">
+    <a href="index.html#studio-set" class="nav__icon-btn" aria-label="Поиск по каталогу">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.6" y2="16.6"/></svg>
+      <span class="nav__icon-label">Поиск</span>
+    </a>
+    <button class="nav__icon-btn" id="bagToggle" aria-label="Открыть корзину">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 8h12l-1 13H7L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+      <span>Корзина</span>
+      <span class="nav__bag-count" id="bagCount">0</span>
+    </button>
+  </div>
+  <button class="nav__menu-btn" id="menuToggle" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <a href="index.html#studio-set">Каталог</a>
+  <a href="index.html#info">Инфо</a>
+</div>
+
+<main id="top">
+
+  <!-- store hero: storefront photo + name/address overlay -->
+  <section class="store-hero">
+    <img src="assets/img/store-hero.jpg" alt="Витрина магазина SOWEBLOC вечером, вывеска с логотипом">
+    <div class="store-hero__copy">
+      <p>МАГАЗИН</p>
+      <h1>SOWEBLOC</h1>
+    </div>
+  </section>
+
+  <!-- address + map link -->
+  <section class="store-info">
+    <div class="wrap store-info__grid">
+      <p class="store-info__address">
+        г. Бишкек, ул. Юнусалиева, 117
+        <span>Кийим дүкөнү · шоурум SOWEBLOC</span>
+      </p>
+      <a class="store-info__map" href="https://www.google.com/maps/search/?api=1&query=Бишкек%20ул.%20Юнусалиева%20117" target="_blank" rel="noopener noreferrer">Открыть на карте</a>
+    </div>
+  </section>
+
+  <!-- photo grid -->
+  <section class="store-gallery">
+    <div class="wrap">
+      <div class="store-gallery__grid">
+        <div class="store-gallery__item store-gallery__item--a">
+          <img src="assets/img/store-1.jpg" alt="Витрина SOWEBLOC — манекен в худи">
+        </div>
+        <div class="store-gallery__item store-gallery__item--b">
+          <img src="assets/img/store-3.jpg" alt="Табличка SOWEBLOC у входа в магазин">
+        </div>
+        <div class="store-gallery__item store-gallery__item--c">
+          <img src="assets/img/store-2.jpg" alt="Витрина SOWEBLOC — манекен в куртке">
+        </div>
+        <div class="store-gallery__item store-gallery__item--d">
+          <img src="assets/img/store-4.jpg" alt="Улица рядом с магазином SOWEBLOC">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- footer -->
+<footer class="footer" id="info">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__mark">
+        <img src="assets/img/logo-white-alpha.png" alt="SOWE">
+        <form class="newsletter" id="newsletterForm">
+          <input type="email" placeholder="Ваш email" required aria-label="Email адрес">
+          <button type="submit">Подписаться</button>
+        </form>
+        <p class="newsletter__note" id="newsletterNote"></p>
+      </div>
+      <div class="footer__col">
+        <h3>Магазин</h3>
+        <ul>
+          <li><a href="index.html#studio-set">Studio Set</a></li>
+          <li><a href="stores.html">SOWEBLOC</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3>Инфо</h3>
+        <ul>
+          <li><a href="https://t.me/SOWEBLOCOFF" target="_blank" rel="noopener noreferrer">Заказать</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3>Соцсети</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/sowebloc/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://t.me/sowebloc" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> SOWE. Все права защищены.</span>
+      <span>Сайт: студия SOWE.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- cart drawer -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer__head">
+    <h3>Ваша корзина</h3>
+    <button class="drawer__close" id="drawerClose" aria-label="Закрыть корзину"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+  </div>
+  <div class="drawer__body" id="drawerBody">
+    <p class="drawer__empty">Ваша корзина пуста.</p>
+  </div>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
